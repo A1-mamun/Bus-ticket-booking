@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Line</title>
+
+    <!-- daisy Ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind custom styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'txt-color': '#030712',
+                        'txt-color-80': '#030712CC',
+                        'txt-color-70': '#030712B3',
+                        'txt-color-60': '#03071299',
+                        'color-primary': '#1DD100',
+                        'color-primary-40': '#1DD10066',
+                        'color-primary-10': '#1DD1001A'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom styles -->
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="">
+    <header class="container mx-auto font-raleway">
+        <nav class="mt-4 md:mt-10">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
+                            <li><a class="text-color-primary">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl md:text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal text-lg text-[#424247] font-bold px-1">
+                        <li><a class="text-color-primary">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end text-lg">
+                    <button
+                        class="flex gap-3 items-center text-xl font-bold text-color-primary bg-color-primary-10 border border-color-primary-40 rounded-xl px-6 py-3">
+                        Bus
+                        <img src="images/bus-icon.png" alt="">
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto px-5 md:px-0">
+        <!-- banner section -->
+        <section class="mt-5 md:mt-7 lg:mt-8">
+            <div class="hero h-[680px] bg-center rounded-3xl" style="background-image: url(images/banner.png);">
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with </h1>
+                        <h1 class="mb-5 text-5xl font-bold text-color-primary">P Paribahan</h1>
+                        <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The
+                            integrated testing features allow for a
+                            streamlined .</p>
+                        <button class="btn bg-color-primary text-xl border-0">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Offer section -->
+        <section class="my-6 md:my-14 lg:my-16 text-center  py-6 md:py-12">
+            <h1 class="text-lg md:text-4xl font-bold mb-14">Best offers for you</h1>
+            <div class="flex gap-14 justify-center">
+                <!-- 15% offer card -->
+                <div class="card w-[600px] h-60 bg-[#FFBF0F] text-txt-color">
+                    <div class="card-body flex justify-center">
+                        <div class="flex justify-between items-center">
+                            <div class="py-8 pr-28 border-r-2 border-dashed flex flex-col justify-items-start">
+                                <h2 class="card-title text-5xl text-txt-color-80 font-black">15% OFF</h2>
+                                <h5 class="flex justify-start text-xl text-txt-color-80 font-semibold">on your next
+                                    purchase</h5>
+                                <p class="flex justify-start text-lg text-txt-color-60 font-medium">use by January 2024
+                                </p>
+                            </div>
+                            <div class="">
+                                <h2 class="card-title text-4xl text-txt-color font-bold">NEW15</h2>
+                                <p class="text-xl text-txt-color-60 font-medium">Coupon Code</p>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 20% offer card -->
+                <div class="card w-[600px] h-60 bg-[#F78C9C] text-txt-color">
+                    <div class="card-body flex justify-center">
+                        <div class="flex justify-between items-center">
+                            <div class="py-8 pr-28 border-r-2 border-dashed flex flex-col justify-items-start">
+                                <h2 class="card-title text-5xl text-txt-color-80 font-black">15% OFF</h2>
+                                <h5 class="flex justify-start text-xl text-txt-color-80 font-semibold">on your next
+                                    purchase</h5>
+                                <p class="flex justify-start text-lg text-txt-color-60 font-medium">use by January 2024
+                                </p>
+                            </div>
+                            <div class="">
+                                <h2 class="card-title text-4xl text-txt-color font-bold">NEW15</h2>
+                                <p class="text-xl text-txt-color-60 font-medium">Coupon Code</p>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <button
+                class=" my-14 py-4 px-7 text-color-primary text-xl font-bold border border-color-primary rounded-xl">See
+                All
+                Offers</button>
+        </section>
+        <!-- Seat plan section -->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
