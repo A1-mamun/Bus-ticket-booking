@@ -27,6 +27,7 @@
                         'txt-color-80': '#030712CC',
                         'txt-color-70': '#030712B3',
                         'txt-color-60': '#03071299',
+                        'txt-color-5': '#0307120D',
                         'color-primary': '#1DD100',
                         'color-primary-40': '#1DD10066',
                         'color-primary-10': '#1DD1001A'
@@ -89,9 +90,9 @@
             </div>
         </nav>
     </header>
-    <main class="container mx-auto px-5 md:px-0">
+    <main class="">
         <!-- banner section -->
-        <section class="mt-5 md:mt-7 lg:mt-8">
+        <section class="container mx-auto px-5 md:px-0 mt-5 md:mt-7 lg:mt-8">
             <div class="hero h-[680px] bg-center rounded-3xl" style="background-image: url(images/banner.png);">
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-md">
@@ -106,7 +107,7 @@
             </div>
         </section>
         <!-- Offer section -->
-        <section class="my-6 md:my-14 lg:my-16 text-center  py-6 md:py-12">
+        <section class="container mx-auto px-5 md:px-0 my-6 md:my-14 lg:my-16 text-center  py-6 md:py-12">
             <h1 class="text-lg md:text-4xl font-bold mb-14">Best offers for you</h1>
             <div class="flex gap-14 justify-center">
                 <!-- 15% offer card -->
@@ -159,7 +160,202 @@
                 All
                 Offers</button>
         </section>
-        <!-- Seat plan section -->
+        <!-- Seat plan description section -->
+        <section class=" border-t-4 border-color-primary rounded-t-[90px] py-6 md:py-12 bg-[#F7F8F8]">
+            <div class="text-center mb-24">
+                <h1 class="text-lg md:text-4xl font-bold mb-6">P.H Paribahan</h1>
+                <p class="text-sm md:text-base opacity-60 max-w-[90%] md:max-w-[60%] mx-auto">Yes, you can run unit
+                    tests and view the results directly within the app. The integrated testing features allow for a
+                    streamlined .</p>
+            </div>
+            <!-- bus info -->
+            <div class="container mx-auto bg-white p-14 rounded-3xl flex justify-between items-center">
+                <div class="w-10/12 pr-32 border-r-2 border-dashed border-color-primary">
+                    <div class="flex justify-between mb-8">
+                        <!-- travel title -->
+                        <div class="flex gap-3 items-center">
+                            <div>
+                                <img src="images/bus-logo.png" alt="">
+                            </div>
+                            <div>
+                                <h2 class="text-4xl font-bold text-txt-color mb-3">Greenline Paribahan</h2>
+                                <p class="text-xl text-txt-color-60">Coach-009-WEB ! AC_Business</p>
+                            </div>
+
+                        </div>
+                        <!-- seat remain -->
+                        <div class="w-56 flex gap-3  bg-color-primary-10 items-center justify-center rounded-xl">
+                            <img class="" src="images/seat-green.png" alt="">
+                            <p class="text-color-primary text-2xl font-medium">40 Seats left</p>
+                        </div>
+                    </div>
+                    <!-- travel description -->
+                    <div class="p-10 bg-[#F7F8F8] rounded-3xl">
+                        <!--route   -->
+                        <div class="flex justify-between py-5">
+                            <p>route</p>
+                            <p>Dhaka - Sylhet</p>
+                        </div>
+                        <!-- departure time -->
+                        <div
+                            class="flex justify-between py-5 border-y border-dashed border-txt-color border-opacity-20">
+                            <p>Departure Time</p>
+                            <p>9:00 PM</p>
+                        </div>
+                        <!-- route details -->
+                        <div class="mt-8 space-x-8 ">
+                            <button class="btn text-xl font-medium text-txt-color-80 bg-txt-color-5">Boarding Point -
+                                Laxmipur</button>
+                            <button class="btn text-xl font-medium text-txt-color-80 bg-txt-color-5">Boarding Point -
+                                Laxmipur</button>
+                            <button class="btn text-xl font-medium text-txt-color-80 bg-txt-color-5">Boarding Point -
+                                Laxmipur</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- per seat cost -->
+                <div class="flex flex-col items-center">
+                    <img src="images/fare.png" alt="">
+                    <h1 class="text-4xl font-bold text-txt-color mt-7 mb-3">550 Taka</h1>
+                    <h4 class="text-2xl font-semibold text-txt-color-60">Per Seat</h4>
+                </div>
+            </div>
+            <!-- seat management -->
+            <div class="container mx-auto grid grid-cols-12 gap-10">
+                <!-- seat plan -->
+                <div class="col-span-7">
+                    <!-- tittle -->
+                    <h4 class="text-2xl font-semibold">Select Your Seat</h4>
+                    <!-- seat availablity -->
+                    <div class="flex justify-between">
+                        <div class="flex gap-2 text-lg font-medium text-txt-color-60">
+                            <img src="images/seat-gray.png" alt="">
+                            <p class="">Available</p>
+                        </div>
+                        <div class="flex gap-2 text-color-primary text-lg font-medium">
+                            <img src="images/seat-green-filled.png" alt="">
+                            <p class="">Available</p>
+                        </div>
+                    </div>
+                    <!-- seat arangment -->
+                    <div class="space-y-8">
+                        <div class="flex gap-28">
+                            <div class="flex gap-8 items-center text-xl font-medium">
+                                <p>A</p>
+                                <button class="btn w-24 text-xl font-medium">A1</button>
+                                <button class="btn w-24 text-xl font-medium">A2</button>
+                            </div>
+                            <div class="flex gap-8">
+                                <button class="btn w-24 text-xl font-medium">A3</button>
+                                <button class="btn w-24 text-xl font-medium">A4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-28">
+                            <div class="flex gap-8 items-center text-xl font-medium">
+                                <p>A</p>
+                                <button class="btn w-24 text-xl font-medium">A1</button>
+                                <button class="btn w-24 text-xl font-medium">A2</button>
+                            </div>
+                            <div class="flex gap-8">
+                                <button class="btn w-24 text-xl font-medium">A3</button>
+                                <button class="btn w-24 text-xl font-medium">A4</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- seat bill area -->
+                <div class="col-span-5">
+                    <!-- tittle -->
+                    <h4 class="text-2xl font-semibold pb-5 border-b border-dashed">Select Your Seat</h4>
+
+                    <div class="overflow-x-auto">
+                        <table class="table ">
+                            <!-- head -->
+                            <thead>
+                                <tr class="">
+                                    <th class="">seat <div class="badge bg-color-primary text-white">2</div>
+                                    </th>
+                                    <th class="text-center">Class</th>
+                                    <th class="flex justify-end">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- row 1 -->
+                                <tr>
+                                    <td>C2</td>
+                                    <td class="text-center">Economoy</td>
+                                    <td class="flex justify-end">550</td>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr>
+                                    <td>C2</td>
+                                    <td class="text-center">Economoy</td>
+                                    <td class="flex justify-end">550</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Total Price</td>
+                                    <td></td>
+                                    <td class="flex justify-end">BDT 1100</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Have any copupon?" />
+                        <button
+                            class="btn-disabled btn btn-sm bg-color-primary text-white text-base font-semibold border-0">Apply</button>
+                    </label>
+                    <div class="overflow-x-auto">
+                        <table class="table">
+                            <!-- head -->
+                            <thead>
+                                <tr class="">
+                                    <th class="">Grand Total
+                                    </th>
+                                    <th class="text-center"></th>
+                                    <th class="flex justify-end">BDT 1100</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div>
+                        <form>
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text text-lg font-semibold">Passenger Name*</span>
+                                </div>
+                                <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
+                            </label>
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text text-lg font-semibold">Phone Number*</span>
+                                </div>
+                                <input type="number" placeholder="Enter your phone number"
+                                    class="input input-bordered w-full" />
+                            </label>
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text text-lg font-semibold">Email ID</span>
+                                </div>
+                                <input type="email" placeholder="Enter your email id"
+                                    class="input input-bordered w-full" />
+                            </label>
+                            <button
+                                class="btn btn-disabled bg-color-primary border-0 text-lg md:text-2xl font-bold text-white  rounded-xl w-full my-5">Next</button>
+                            <div class="label flex justify-around">
+                                <span class="label-text-alt underline underline-offset-2 text-txt-color-70">Terms and
+                                    Conditions</span>
+                                <span class="label-text-alt underline underline-offset-2 text-txt-color-70">Cancellation
+                                    Policy</span>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
 
