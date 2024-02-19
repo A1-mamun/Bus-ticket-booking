@@ -2,10 +2,10 @@ function selectSeat(event) {
   // Accessing the id of the button that triggered the event
   const stringNumber = document.getElementById("seat-booked").innerText;
   let intNumber = parseInt(stringNumber);
+  const button = event.target;
+  // console.log(button);
+  const buttonId = button.id;
   if (intNumber < 4) {
-    const button = event.target;
-    // console.log(button);
-    const buttonId = button.id;
     if (button.classList.contains("bg-color-primary")) {
       removeGreen(buttonId);
       decSeat("seat-booked");
@@ -17,6 +17,15 @@ function selectSeat(event) {
       incSeat("seat-booked");
       decSeatLeft("seat-left");
       addBookedSeatList("bill-table-body", buttonId);
+      totalPrice();
+    }
+  }
+  if (intNumber == 4) {
+    if (button.classList.contains("bg-color-primary")) {
+      removeGreen(buttonId);
+      decSeat("seat-booked");
+      incSeatLeft("seat-left");
+      removeBookedSeatList("bill-table-body", buttonId);
       totalPrice();
     }
   }
