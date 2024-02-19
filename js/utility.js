@@ -36,7 +36,7 @@ function showPopup() {
 
 function hidePopup() {
   document.getElementById("pop").classList.add("hidden");
-  location.reload();
+  // location.reload();
 }
 
 function totalPrice() {
