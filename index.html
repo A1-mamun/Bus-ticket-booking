@@ -138,14 +138,14 @@
                     <div class="card-body flex justify-center">
                         <div class="flex justify-between items-center">
                             <div class="py-8 pr-28 border-r-2 border-dashed flex flex-col justify-items-start">
-                                <h2 class="card-title text-5xl text-txt-color-80 font-black">15% OFF</h2>
+                                <h2 class="card-title text-5xl text-txt-color-80 font-black">20% OFF</h2>
                                 <h5 class="flex justify-start text-xl text-txt-color-80 font-semibold">on your next
                                     purchase</h5>
                                 <p class="flex justify-start text-lg text-txt-color-60 font-medium">use by January 2024
                                 </p>
                             </div>
                             <div class="">
-                                <h2 class="card-title text-4xl text-txt-color font-bold">NEW15</h2>
+                                <h2 class="card-title text-4xl text-txt-color font-bold">Couple 20</h2>
                                 <p class="text-xl text-txt-color-60 font-medium">Coupon Code</p>
 
 
@@ -319,7 +319,7 @@
                             <div class="flex gap-8">
                                 <button onclick="selectSeat(event)" id="E3"
                                     class="btn w-24 text-xl font-medium">E3</button>
-                                <button onclick="selectSeat(event)" id="A4"
+                                <button onclick="selectSeat(event)" id="E4"
                                     class="btn w-24 text-xl font-medium">E4</button>
                             </div>
                         </div>
@@ -440,9 +440,22 @@
                                 </thead>
                             </table>
                         </div>
-                        <label class="input input-bordered flex items-center gap-2">
-                            <input type="text" class="grow" placeholder="Have any copupon?" />
-                            <button
+                        <div id="discount-area" class="hidden overflow-x-auto">
+                            <table class="table">
+                                <!-- head -->
+                                <thead>
+                                    <tr class="">
+                                        <th class="">Discount
+                                        </th>
+                                        <th class=""></th>
+                                        <th class="flex justify-center">BDT :<span id="discount">00</span> </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <label id="cupon-area" class="input input-bordered flex items-center gap-2">
+                            <input id="cupon" type="text" class="grow" placeholder="Have any copupon?" />
+                            <button onclick="cuponValid()" id="btn-apply"
                                 class="btn-disabled btn btn-sm bg-color-primary text-white text-base font-semibold border-0">Apply</button>
                         </label>
                         <div class="overflow-x-auto">
@@ -471,8 +484,8 @@
                                 <div class="label">
                                     <span class="label-text text-lg font-semibold">Phone Number*</span>
                                 </div>
-                                <input type="number" placeholder="Enter your phone number"
-                                    class="input input-bordered w-full" />
+                                <input oninput="checkInputPhone()" id="phone-number" type="number"
+                                    placeholder="Enter your phone number" class="input input-bordered w-full" />
                             </label>
                             <label class="form-control w-full">
                                 <div class="label">
@@ -481,8 +494,8 @@
                                 <input type="email" placeholder="Enter your email id"
                                     class="input input-bordered w-full" />
                             </label>
-                            <button onclick="showPopup()" id="next-btn"
-                                class="btn bg-color-primary border-0 text-lg md:text-2xl font-bold text-white  rounded-xl w-full my-5">Next</button>
+                            <button onclick="showPopup()" id="btn-next"
+                                class="btn-disabled btn bg-color-primary border-0 text-lg md:text-2xl font-bold text-white  rounded-xl w-full my-5">Next</button>
                             <div class="label flex justify-around">
                                 <span class="label-text-alt underline underline-offset-2 text-txt-color-70">Terms and
                                     Conditions</span>
