@@ -1,3 +1,10 @@
+// add event listener to the seat button using event bubble
+document.getElementById("seat-container").addEventListener("click", (event) => {
+  if (event.target.tagName === "BUTTON") {
+    selectSeat(event);
+  }
+})
+
 let isAnySeatSelected = false;
 function selectSeat(event) {
   // Accessing the id of the button that triggered the event

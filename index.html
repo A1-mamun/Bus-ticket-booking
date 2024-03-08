@@ -240,7 +240,7 @@
                         </div>
                     </div>
                     <!-- seat arangment -->
-                    <div class="space-y-4 p-14">
+                    <div id="seat-container" class="space-y-4 p-14">
                         <div class="flex justify-end">
                             <button class="btn w-24 text-xl"><img src="images/tabler-icon-steering-wheel.png"
                                     alt=""></button>
@@ -249,155 +249,115 @@
 
                             <div class="flex gap-12 items-center text-xl font-medium">
                                 <p>A</p>
-                                <button onclick="selectSeat(event)" id="A1"
-                                    class="btn w-24 text-xl font-medium">A1</button>
-                                <button onclick="selectSeat(event)" id="A2"
-                                    class="btn w-24 text-xl font-medium">A2</button>
+                                <button id="A1" class="btn w-24 text-xl font-medium">A1</button>
+                                <button id="A2" class="btn w-24 text-xl font-medium">A2</button>
                             </div>
                             <div class="flex gap-8">
-                                <button onclick="selectSeat(event)" id="A3"
-                                    class="btn w-24 text-xl font-medium">A3</button>
-                                <button onclick="selectSeat(event)" id="A4"
-                                    class="btn w-24 text-xl font-medium">A4</button>
+                                <button id="A3" class="btn w-24 text-xl font-medium">A3</button>
+                                <button id="A4" class="btn w-24 text-xl font-medium">A4</button>
                             </div>
                         </div>
                         <div class="flex gap-16 justify-between">
                             <div class="flex gap-12 items-center text-xl font-medium">
                                 <p>B</p>
-                                <button onclick="selectSeat(event)" id="B1"
-                                    class="btn w-24 text-xl font-medium">B1</button>
-                                <button onclick="selectSeat(event)" id="B2"
-                                    class="btn w-24 text-xl font-medium">B2</button>
+                                <button id="B1" class="btn w-24 text-xl font-medium">B1</button>
+                                <button id="B2" class="btn w-24 text-xl font-medium">B2</button>
                             </div>
                             <div class="flex gap-8">
-                                <button onclick="selectSeat(event)" id="B3"
-                                    class="btn w-24 text-xl font-medium">B3</button>
-                                <button onclick="selectSeat(event)" id="B4"
-                                    class="btn w-24 text-xl font-medium">B4</button>
+                                <button id="B3" class="btn w-24 text-xl font-medium">B3</button>
+                                <button id="B4" class="btn w-24 text-xl font-medium">B4</button>
                             </div>
                         </div>
                         <div class="flex gap-16 justify-between">
 
                             <div class="flex gap-12 items-center text-xl font-medium">
                                 <p>C</p>
-                                <button onclick="selectSeat(event)" id="C1"
-                                    class="btn w-24 text-xl font-medium">C1</button>
-                                <button onclick="selectSeat(event)" id="C2"
-                                    class="btn w-24 text-xl font-medium">C2</button>
+                                <button id="C1" class="btn w-24 text-xl font-medium">C1</button>
+                                <button id="C2" class="btn w-24 text-xl font-medium">C2</button>
                             </div>
                             <div class="flex gap-8">
-                                <button onclick="selectSeat(event)" id="C3"
-                                    class="btn w-24 text-xl font-medium">C3</button>
-                                <button onclick="selectSeat(event)" id="C4"
-                                    class="btn w-24 text-xl font-medium">C4</button>
+                                <button id="C3" class="btn w-24 text-xl font-medium">C3</button>
+                                <button id="C4" class="btn w-24 text-xl font-medium">C4</button>
                             </div>
                         </div>
                         <div class="flex gap-16 justify-between">
                             <div class="flex gap-12 items-center text-xl font-medium">
                                 <p>D</p>
-                                <button onclick="selectSeat(event)" id="D1"
-                                    class="btn w-24 text-xl font-medium">D1</button>
-                                <button onclick="selectSeat(event)" id="D2"
-                                    class="btn w-24 text-xl font-medium">D2</button>
+                                <button id="D1" class="btn w-24 text-xl font-medium">D1</button>
+                                <button id="D2" class="btn w-24 text-xl font-medium">D2</button>
                             </div>
                             <div class="flex gap-8">
-                                <button onclick="selectSeat(event)" id="D3"
-                                    class="btn w-24 text-xl font-medium">D3</button>
-                                <button onclick="selectSeat(event)" id="D4"
-                                    class="btn w-24 text-xl font-medium">D4</button>
+                                <button id="D3" class="btn w-24 text-xl font-medium">D3</button>
+                                <button id="D4" class="btn w-24 text-xl font-medium">D4</button>
                             </div>
                         </div>
                         <div class="flex gap-16 justify-between">
 
                             <div class="flex gap-12 items-center text-xl font-medium">
                                 <p>E</p>
-                                <button onclick="selectSeat(event)" id="E1"
-                                    class="btn w-24 text-xl font-medium">E1</button>
-                                <button onclick="selectSeat(event)" id="E2"
-                                    class="btn w-24 text-xl font-medium">E2</button>
+                                <button id="E1" class="btn w-24 text-xl font-medium">E1</button>
+                                <button id="E2" class="btn w-24 text-xl font-medium">E2</button>
                             </div>
                             <div class="flex gap-8">
-                                <button onclick="selectSeat(event)" id="E3"
-                                    class="btn w-24 text-xl font-medium">E3</button>
-                                <button onclick="selectSeat(event)" id="E4"
-                                    class="btn w-24 text-xl font-medium">E4</button>
+                                <button id="E3" class="btn w-24 text-xl font-medium">E3</button>
+                                <button id="E4" class="btn w-24 text-xl font-medium">E4</button>
                             </div>
                         </div>
                         <div class="flex gap-16 justify-between">
                             <div class="flex gap-12 items-center text-xl font-medium">
                                 <p>F</p>
-                                <button onclick="selectSeat(event)" id="F1"
-                                    class="btn w-24 text-xl font-medium">F1</button>
-                                <button onclick="selectSeat(event)" id="F2"
-                                    class="btn w-24 text-xl font-medium">F2</button>
+                                <button id="F1" class="btn w-24 text-xl font-medium">F1</button>
+                                <button id="F2" class="btn w-24 text-xl font-medium">F2</button>
                             </div>
                             <div class="flex gap-8">
-                                <button onclick="selectSeat(event)" id="F3"
-                                    class="btn w-24 text-xl font-medium">F3</button>
-                                <button onclick="selectSeat(event)" id="F4"
-                                    class="btn w-24 text-xl font-medium">F4</button>
+                                <button id="F3" class="btn w-24 text-xl font-medium">F3</button>
+                                <button id="F4" class="btn w-24 text-xl font-medium">F4</button>
                             </div>
                         </div>
                         <div class="flex gap-16 justify-between">
 
                             <div class="flex gap-12 items-center text-xl font-medium">
                                 <p>G</p>
-                                <button onclick="selectSeat(event)" id="G1"
-                                    class="btn w-24 text-xl font-medium">G1</button>
-                                <button onclick="selectSeat(event)" id="G2"
-                                    class="btn w-24 text-xl font-medium">G2</button>
+                                <button id="G1" class="btn w-24 text-xl font-medium">G1</button>
+                                <button id="G2" class="btn w-24 text-xl font-medium">G2</button>
                             </div>
                             <div class="flex gap-8">
-                                <button onclick="selectSeat(event)" id="G3"
-                                    class="btn w-24 text-xl font-medium">G3</button>
-                                <button onclick="selectSeat(event)" id="G4"
-                                    class="btn w-24 text-xl font-medium">G4</button>
+                                <button id="G3" class="btn w-24 text-xl font-medium">G3</button>
+                                <button id="G4" class="btn w-24 text-xl font-medium">G4</button>
                             </div>
                         </div>
                         <div class="flex gap-16 justify-between">
                             <div class="flex gap-12 items-center text-xl font-medium">
                                 <p>H</p>
-                                <button onclick="selectSeat(event)" id="H1"
-                                    class="btn w-24 text-xl font-medium">H1</button>
-                                <button onclick="selectSeat(event)" id="H2"
-                                    class="btn w-24 text-xl font-medium">H2</button>
+                                <button id="H1" class="btn w-24 text-xl font-medium">H1</button>
+                                <button id="H2" class="btn w-24 text-xl font-medium">H2</button>
                             </div>
                             <div class="flex gap-8">
-                                <button onclick="selectSeat(event)" id="H3"
-                                    class="btn w-24 text-xl font-medium">H3</button>
-                                <button onclick="selectSeat(event)" id="H4"
-                                    class="btn w-24 text-xl font-medium">H4</button>
+                                <button id="H3" class="btn w-24 text-xl font-medium">H3</button>
+                                <button id="H4" class="btn w-24 text-xl font-medium">H4</button>
                             </div>
                         </div>
                         <div class="flex gap-16 justify-between">
 
                             <div class="flex gap-12 items-center text-xl font-medium">
                                 <p>I</p>
-                                <button onclick="selectSeat(event)" id="I1"
-                                    class="btn w-24 text-xl font-medium">I1</button>
-                                <button onclick="selectSeat(event)" id="I2"
-                                    class="btn w-24 text-xl font-medium">I2</button>
+                                <button id="I1" class="btn w-24 text-xl font-medium">I1</button>
+                                <button id="I2" class="btn w-24 text-xl font-medium">I2</button>
                             </div>
                             <div class="flex gap-8">
-                                <button onclick="selectSeat(event)" id="I3"
-                                    class="btn w-24 text-xl font-medium">I3</button>
-                                <button onclick="selectSeat(event)" id="I4"
-                                    class="btn w-24 text-xl font-medium">I4</button>
+                                <button id="I3" class="btn w-24 text-xl font-medium">I3</button>
+                                <button id="I4" class="btn w-24 text-xl font-medium">I4</button>
                             </div>
                         </div>
                         <div class="flex gap-16 justify-between">
                             <div class="flex gap-12 items-center text-xl font-medium">
                                 <p>J</p>
-                                <button onclick="selectSeat(event)" id="J1"
-                                    class="btn w-24 text-xl font-medium">J1</button>
-                                <button onclick="selectSeat(event)" id="J2"
-                                    class="btn w-24 text-xl font-medium">J2</button>
+                                <button id="J1" class="btn w-24 text-xl font-medium">J1</button>
+                                <button id="J2" class="btn w-24 text-xl font-medium">J2</button>
                             </div>
                             <div class="flex gap-8">
-                                <button onclick="selectSeat(event)" id="J3"
-                                    class="btn w-24 text-xl font-medium">J3</button>
-                                <button onclick="selectSeat(event)" id="J4"
-                                    class="btn w-24 text-xl font-medium">J4</button>
+                                <button id="J3" class="btn w-24 text-xl font-medium">J3</button>
+                                <button id="J4" class="btn w-24 text-xl font-medium">J4</button>
                             </div>
                         </div>
                     </div>
